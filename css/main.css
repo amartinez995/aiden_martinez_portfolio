@@ -12,8 +12,19 @@
 
 html {
     color: #222;
+    background-color: darkslategrey;
     font-size: 1em;
     line-height: 1.4;
+}
+
+body {
+    background-color: slategrey;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-color: orange;
+    border-style: solid;
 }
 
 /*
@@ -40,14 +51,14 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
+/* hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
+} */
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -96,36 +107,90 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-header>nav>ul>li>a:active,
-header>nav>ul>li>a:hover {
-    background-color: lightgray;
-    color: orange;
-    text-decoration: unset;
-}
-
 header>nav>ul>li {
-    display: grid;
-    height: 7px;
-    border: 0;
-    border-top: 0px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+    display: inline;
 }
 
+header>nav>ul,
+a {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-decoration: unset;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    border-radius: 25px;
+}
 
+header>nav>ul>li>:active,
+header>nav>ul>li>:hover {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-decoration: unset;
+    color: orange;
+    background-color: #222;
+    text-align: center;
+    transition: 0.5s;
+}
 
+/* The above piece of code changes the text and background color of the navigation bar when it is activated, and when it is hovered across. */
 
+h1,
+h2 {
+    text-align: center;
+}
 
+/* The above piece of code modifies the headers' appearances. */
 
+footer {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    padding-top: 10px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: orange;
+}
 
+/* The above piece of code modifies the footer's appearance. */
 
+article>div#summaryparagraph>h2#summaryheader,
+h2#personalprofileheader,
+h2#ksaheader {
+    border-radius: 25px;
+    border-width: 0px;
+    border-style: solid;
+    background-color: #222;
+    width: 300px;
+    margin: auto;
+    color: white;
+}
 
+article>div#summaryparagraph {
+    background-color: orange;
+    color: white;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: orange;
+    border-style: solid;
+    text-align: center;
 
+}
 
+article>div#summaryparagraph:hover {
+    border-radius: 25px;
+    color: white;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    transition: 0.5s;
+}
 
-
-
-
+/* The above pieces of code modify the appearances of the headers and paragraphs of the article. */
 
 /* ==========================================================================
    Helper classes

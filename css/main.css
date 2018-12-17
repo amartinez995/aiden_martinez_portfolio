@@ -117,8 +117,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-header>nav>ul>li {
+header nav ul li {
     display: inline;
+
 }
 
 header>nav>ul,
@@ -152,12 +153,17 @@ header>nav>ul>li>:hover {
 
 /* 
 ==================================================
-h1/h2 & div Style Rules
+H1/H2/Div Style Rules
 ==================================================
 */
 h1 {
     text-align: center;
+    -moz-text-align: center;
+    -ms-text-align: center;
+    -webkit-text-align: center;
 }
+
+/* The above piece of code modifies the appearances (text alignment) of all <h1> elements, as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
 
 h2#summaryh2,
 h2#personalprofileh2,
@@ -175,8 +181,36 @@ h2#skillsh2 {
     text-align: center;
     width: 300px;
     margin: auto;
-
+    -moz-color: white;
+    -moz-background-color: #222;
+    -moz-border-color: #222;
+    -moz-border-radius: 25px;
+    -moz-border-style: solid;
+    -moz-border-width: 0px;
+    -moz-text-align: center;
+    -moz-width: 300px;
+    -moz-margin: auto;
+    -ms-color: white;
+    -ms-background-color: #222;
+    -ms-border-color: #222;
+    -ms-border-radius: 25px;
+    -ms-border-style: solid;
+    -ms-border-width: 0px;
+    -ms-text-align: center;
+    -ms-width: 300px;
+    -ms-margin: auto;
+    -webkit-color: white;
+    -webkit-background-color: #222;
+    -webkit-border-color: #222;
+    -webkit-border-radius: 25px;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-text-align: center;
+    -webkit-width: 300px;
+    -webkit-margin: auto;
 }
+
+/* The above pieces of code modify the appearances (text color (white), background color (black), borders (colors (black), radii, styles, width), text alignment, width, margin) of all <h2> elements with the following id (#): summaryh2, personalprofileh2, ksah2, educationh2, experienceh2, hobbiesh2, skillsh2; as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
 
 div#summaryparagraph,
 div#shortsummary,
@@ -194,7 +228,36 @@ div#skills {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
+    -moz-color: white;
+    -moz-background-color: orange;
+    -moz-border-color: orange;
+    -moz-border-radius: 25px;
+    -moz-border-style: solid;
+    -moz-border-width: 1px;
+    -moz-text-align: center;
+    -moz-margin-bottom: 15px;
+    -moz-margin-top: 15px;
+    -ms-color: white;
+    -ms-background-color: orange;
+    -ms-border-color: orange;
+    -ms-border-radius: 25px;
+    -ms-border-style: solid;
+    -ms-border-width: 1px;
+    -ms-text-align: center;
+    -ms-margin-bottom: 15px;
+    -ms-margin-top: 15px;
+    -webkit-color: white;
+    -webkit-background-color: orange;
+    -webkit-border-color: orange;
+    -webkit-border-radius: 25px;
+    -webkit-border-style: solid;
+    -webkit-border-width: 1px;
+    -webkit-text-align: center;
+    -webkit-margin-bottom: 15px;
+    -webkit-margin-top: 15px;
 }
+
+/* The above pieces of code modify the appearances (text color (white), background color (orange), borders (colors (orange), radii, styles, width), text alignment, top and bottom margins) of all div elements with the following id (#): summaryparagraph, shortsummary, ksa, education, experience, hobbies, skills; as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
 
 div#ksa,
 div#education,
@@ -202,7 +265,12 @@ div#experience,
 div#hobbies,
 div#skills {
     text-align: unset;
+    -moz-text-align: unset;
+    -ms-text-align: unset;
+    -webkit-text-align: unset;
 }
+
+/* The above pieces of code modify the appearances (text alignment) of all div elements with the following id (#): ksa, education, experience, hobbies, skills; as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
 
 div#summaryparagraph:hover,
 div#shortsummary:hover,
@@ -221,13 +289,39 @@ div#skills:hover {
     margin-bottom: 25px;
     margin-top: 25px;
     transition: 0.5s;
+    -moz-color: orange;
+    -moz-background-color: #222;
+    -moz-border-color: orange;
+    -moz-border-radius: 25px;
+    -moz-border-style: solid;
+    -moz-border-width: 3px;
+    -moz-padding-top: 25px;
+    -moz-margin-bottom: 25px;
+    -moz-margin-top: 25px;
+    -moz-transition: 0.5s;
+    -ms-color: orange;
+    -ms-background-color: #222;
+    -ms-border-color: orange;
+    -ms-border-radius: 25px;
+    -ms-border-style: solid;
+    -ms-border-width: 3px;
+    -ms-padding-top: 25px;
+    -ms-margin-bottom: 25px;
+    -ms-margin-top: 25px;
+    -ms-transition: 0.5s;
+    -webkit-color: orange;
+    -webkit-background-color: #222;
+    -webkit-border-color: orange;
+    -webkit-border-radius: 25px;
+    -webkit-border-style: solid;
+    -webkit-border-width: 3px;
+    -webkit-padding-top: 25px;
+    -webkit-margin-bottom: 25px;
+    -webkit-margin-top: 25px;
+    -webkit-transition: 0.5s;
 }
 
-/* 
-==================================================
-The above pieces of code modify the appearances of the h1, h2s, and divs of the document, as well as their appearances when the cursor is hovered over the h2s and divs.
-================================================== 
-*/
+/* The above pieces of code modify the appearances (text color (orange), background color (black), borders (colors (orange), radii, styles, width), padding on the top, top and bottom margins, transitions of appearances when the elements are hovered upon) of all div elements with the following id: summaryparagraph, shortsummary, ksa, education, experience, hobbies, skills, as well as their appearances when the cursor is hovered over aforementioned div elements, in addition to adding cross-browser extensions so that the code functions properly in all major browsers. */
 
 /* 
 ==================================================
@@ -339,10 +433,11 @@ The above piece of code modifies the footer's appearance.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+/*
+==================================================
+Mobile Styles: 0px to 480px
+==================================================
+*/
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),

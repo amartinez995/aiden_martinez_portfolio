@@ -17,11 +17,6 @@ html {
     line-height: 1.4;
 }
 
-h1 {
-    background-color: orange;
-    border-radius: 25px;
-}
-
 body {
     background-color: slategrey;
     margin-left: 80px;
@@ -119,6 +114,9 @@ textarea {
    ========================================================================== */
 header nav ul li {
     display: inline;
+    -moz-display: inline;
+    -ms-display: inline;
+    -webkit-display: inline;
 
 }
 
@@ -133,6 +131,30 @@ a#contacts {
     background-color: orange;
     text-align: center;
     border-radius: 25px;
+    -moz-list-style-type: none;
+    -moz-margin: 0;
+    -moz-padding: 20px;
+    -moz-text-decoration: unset;
+    -moz-color: white;
+    -moz-background-color: orange;
+    -moz-text-align: center;
+    -moz-border-radius: 25px;
+    -ms-list-style-type: none;
+    -ms-margin: 0;
+    -ms-padding: 20px;
+    -ms-text-decoration: unset;
+    -ms-color: white;
+    -ms-background-color: orange;
+    -ms-text-align: center;
+    -ms-border-radius: 25px;
+    -webkit-list-style-type: none;
+    -webkit-margin: 0;
+    -webkit-padding: 20px;
+    -webkit-text-decoration: unset;
+    -webkit-color: white;
+    -webkit-background-color: orange;
+    -webkit-text-align: center;
+    -webkit-border-radius: 25px;
 }
 
 header>nav>ul>li>a#navbarlinks:active,
@@ -145,35 +167,39 @@ header>nav>ul>li>a#navbarlinks:hover {
     background-color: #222;
     text-align: center;
     transition: 0.5s;
+    -moz-list-style-type: none;
+    -moz-margin: 0;
+    -moz-padding: 20px;
+    -moz-text-decoration: unset;
+    -moz-color: orange;
+    -moz-background-color: #222;
+    -moz-text-align: center;
+    -moz-transition: 0.5s;
+    -ms-list-style-type: none;
+    -ms-margin: 0;
+    -ms-padding: 20px;
+    -ms-text-decoration: unset;
+    -ms-color: orange;
+    -ms-background-color: #222;
+    -ms-text-align: center;
+    -ms-transition: 0.5s;
+    -webkit-list-style-type: none;
+    -webkit-margin: 0;
+    -webkit-padding: 20px;
+    -webkit-text-decoration: unset;
+    -webkit-color: orange;
+    -webkit-background-color: #222;
+    -webkit-text-align: center;
+    -webkit-transition: 0.5s;
 }
-
-
 
 /* The above piece of code changes the text and background color of the navigation bar when it is activated, and when it is hovered across. */
 
-
-
-
 /* 
-==================================================
-H1/H2/Div Style Rules
-==================================================
+===========================================================================
+Author's Custom Style Rules (Begin)
+===========================================================================
 */
-h1 {
-    text-align: center;
-    -moz-text-align: center;
-    -ms-text-align: center;
-    -webkit-text-align: center;
-}
-
-h3#chapters {
-    border: 5px solid #222;
-    border-radius: 25px;
-    background-color: #222;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 a#projectlinks,
 li#projectlistings {
@@ -183,7 +209,6 @@ li#projectlistings {
     list-style: none;
 }
 
-
 li#projectlistings:hover {
     border: 5px solid orange;
     border-radius: 25px;
@@ -191,7 +216,26 @@ li#projectlistings:hover {
     transition: 0.25s;
 }
 
-/* The above piece of code modifies the appearances (text alignment) of all <h1> elements, as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
+h1 {
+    text-align: center;
+    background-color: orange;
+    border-radius: 25px;
+    -moz-text-align: center;
+    -moz-background-color: orange;
+    -moz-border-radius: 25px;
+    -ms-text-align: center;
+    -ms-background-color: orange;
+    -ms-border-radius: 25px;
+    -webkit-text-align: center;
+    -webkit-background-color: orange;
+    -webkit-border-radius: 25px;
+}
+
+/*
+===========================================================================
+The above piece of code modifies the appearances (text-align, background-color, border-radius) of all <h1> elements, as well as adding cross-browser extensions so that the code functions properly in all major browsers.
+===========================================================================
+*/
 
 h2#summaryh2,
 h2#personalprofileh2,
@@ -238,7 +282,56 @@ h2#skillsh2 {
     -webkit-margin: auto;
 }
 
-/* The above pieces of code modify the appearances (text color (white), background color (black), borders (colors (black), radii, styles, width), text alignment, width, margin) of all <h2> elements with the following id (#): summaryh2, personalprofileh2, ksah2, educationh2, experienceh2, hobbiesh2, skillsh2; as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
+/*
+===========================================================================
+The above piece of code modifies the appearances (text color, background-color, border-color, border-radius, border-style, border-width, text-align, width, margin) of all <h2> elements with the following id (#): summaryh2, personalprofileh2, ksah2, educationh2, experienceh2, hobbiesh2, skillsh2; as well as adding cross-browser extensions so that the code functions properly in all major browsers.
+===========================================================================
+*/
+
+h3#chapters {
+    color: white;
+    background-color: #222;
+    border-color: #222;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    -moz-color: white;
+    -moz-background-color: #222;
+    -moz-border-color: #222;
+    -moz-border-radius: 25px;
+    -moz-border-style: solid;
+    -moz-border-width: 0px;
+    -moz-text-align: center;
+    -moz-width: 300px;
+    -moz-margin: auto;
+    -ms-color: white;
+    -ms-background-color: #222;
+    -ms-border-color: #222;
+    -ms-border-radius: 25px;
+    -ms-border-style: solid;
+    -ms-border-width: 0px;
+    -ms-text-align: center;
+    -ms-width: 300px;
+    -ms-margin: auto;
+    -webkit-color: white;
+    -webkit-background-color: #222;
+    -webkit-border-color: #222;
+    -webkit-border-radius: 25px;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-text-align: center;
+    -webkit-width: 300px;
+    -webkit-margin: auto;
+}
+
+/*
+===========================================================================
+The above piece of code modifies the appearances (text color, background-color, border-color, border-radius, border-style, border-width, text-align, width, margin) of all <h3> elements with the following id (#): chapters; as well as adding cross-browser extensions so that the code functions properly in all major browsers.
+===========================================================================
+*/
 
 div#summaryparagraph,
 div#shortsummary,
@@ -285,7 +378,11 @@ div#skills {
     -webkit-margin-top: 15px;
 }
 
-/* The above pieces of code modify the appearances (text color (white), background color (orange), borders (colors (orange), radii, styles, width), text alignment, top and bottom margins) of all div elements with the following id (#): summaryparagraph, shortsummary, ksa, education, experience, hobbies, skills; as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
+/*
+===========================================================================
+The above pieces of code modify the appearances (text color (white), background color (orange), borders (colors (orange), radii, styles, width), text alignment, top and bottom margins) of all div elements with the following id (#): summaryparagraph, shortsummary, ksa, education, experience, hobbies, skills; as well as adding cross-browser extensions so that the code functions properly in all major browsers.
+===========================================================================
+*/
 
 div#ksa,
 div#education,
@@ -298,7 +395,11 @@ div#skills {
     -webkit-text-align: unset;
 }
 
-/* The above pieces of code modify the appearances (text alignment) of all div elements with the following id (#): ksa, education, experience, hobbies, skills; as well as adding cross-browser extensions so that the code functions properly in all major browsers. */
+/*
+===========================================================================
+The above pieces of code modify the appearances (text alignment) of all div elements with the following id (#): ksa, education, experience, hobbies, skills; as well as adding cross-browser extensions so that the code functions properly in all major browsers.
+===========================================================================
+*/
 
 div#summaryparagraph:hover,
 div#shortsummary:hover,
@@ -350,7 +451,17 @@ a#contacts:hover {
     -webkit-transition: 0.5s;
 }
 
-/* The above pieces of code modify the appearances (text color (orange), background color (black), borders (colors (orange), radii, styles, width), padding on the top, top and bottom margins, transitions of appearances when the elements are hovered upon) of all div elements with the following id: summaryparagraph, shortsummary, ksa, education, experience, hobbies, skills, as well as their appearances when the cursor is hovered over aforementioned div elements, in addition to adding cross-browser extensions so that the code functions properly in all major browsers. */
+/*
+===========================================================================
+The above pieces of code modify the appearances (text color (orange), background color (black), borders (colors (orange), radii, styles, width), padding on the top, top and bottom margins, transitions of appearances when the elements are hovered upon) of all div elements with the following id: summaryparagraph, shortsummary, ksa, education, experience, hobbies, skills, as well as their appearances when the cursor is hovered over aforementioned div elements, in addition to adding cross-browser extensions so that the code functions properly in all major browsers.
+===========================================================================
+*/
+
+/* 
+===========================================================================
+Author's Custom Style Rules (End)
+===========================================================================
+*/
 
 /* 
 ==================================================

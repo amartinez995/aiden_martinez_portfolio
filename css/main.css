@@ -121,8 +121,7 @@ header nav ul li {
 }
 
 header>nav>ul,
-a#navbarlinks,
-a#contacts {
+a#navbarlinks {
     list-style-type: none;
     margin: 0;
     padding: 20px;
@@ -131,6 +130,7 @@ a#contacts {
     background-color: orange;
     text-align: center;
     border-radius: 25px;
+    transition: 0.25s;
     -moz-list-style-type: none;
     -moz-margin: 0;
     -moz-padding: 20px;
@@ -166,7 +166,7 @@ header>nav>ul>li>a#navbarlinks:hover {
     color: orange;
     background-color: #222;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.25s;
     -moz-list-style-type: none;
     -moz-margin: 0;
     -moz-padding: 20px;
@@ -207,6 +207,7 @@ li#projectlistings {
     color: white;
     text-decoration-line: none;
     list-style: none;
+    transition: 0.25s;
 }
 
 li#projectlistings:hover {
@@ -349,6 +350,7 @@ div#skills {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
+    transition: 0.5s;
     -moz-color: white;
     -moz-background-color: orange;
     -moz-border-color: orange;
@@ -407,8 +409,7 @@ div#ksa:hover,
 div#education:hover,
 div#experience:hover,
 div#hobbies:hover,
-div#skills:hover,
-a#contacts:hover {
+div#skills:hover {
     color: orange;
     background-color: #222;
     border-color: orange;
@@ -457,210 +458,224 @@ The above pieces of code modify the appearances (text color (orange), background
 ===========================================================================
 */
 
-/* 
+/*
 ===========================================================================
-Author's Custom Style Rules (End)
+Footer Styles (BEGIN)
 ===========================================================================
 */
 
-/* 
-==================================================
-Footer Style Rules
-==================================================
-*/
 footer {
-    text-align: center;
     background-color: orange;
-    color: white;
-    padding-top: 10px;
-    border-radius: 25px;
-    border-width: 0px;
-    border-style: solid;
     border-color: orange;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    -moz-background-color: orange;
+    -moz-border-color: orange;
+    -moz-border-radius: 25px;
+    -moz-border-style: solid;
+    -moz-border-width: 0px;
+    -moz-color: white;
+    -moz-padding-top: 5px;
+    -moz-padding-bottom: 5px;
+    -moz-text-align: center;
+    -ms-background-color: orange;
+    -ms-border-color: orange;
+    -ms-border-radius: 25px;
+    -ms-border-style: solid;
+    -ms-border-width: 0px;
+    -ms-color: white;
+    -ms-padding-top: 5px;
+    -ms-padding-bottom: 5px;
+    -ms-text-align: center;
+    -o-background-color: orange;
+    -o-border-color: orange;
+    -o-border-radius: 25px;
+    -o-border-style: solid;
+    -o-border-width: 0px;
+    -o-color: white;
+    -o-padding-top: 5px;
+    -o-padding-bottom: 5px;
+    -o-text-align: center;
+    -webkit-background-color: orange;
+    -webkit-border-color: orange;
+    -webkit-border-radius: 25px;
+    -webkit-border-style: solid;
+    -webkit-border-width: 0px;
+    -webkit-color: white;
+    -webkit-padding-top: 5px;
+    -webkit-padding-bottom: 5px;
+    -webkit-text-align: center;
 }
 
 /* 
 ==================================================
-The above piece of code modifies the footer's appearance. 
+The above piece of code changes the following: background color, border color, border radius, border style, border width, font/text color, top/bottom paddings, text alignment of all footer elements to the following respective values: orange, orange, 25px, solid, 0px, white, 5px, 5px, center; as well as adding cross-browser extensions so that the above piece of code will function properly with the following browsers: Safari, Mozilla Firefox, Internet Explorer, Microsoft Edge, Google Chrome, Opera.
 ==================================================
 */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+footer>a#contacts {
+    background-color: #222;
+    border-color: orange;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 3px;
+    color: white;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    text-decoration: unset;
+    transition: 0.5s;
+    -moz-background-color: #222;
+    -moz-border-color: orange;
+    -moz-border-radius: 25px;
+    -moz-border-style: groove;
+    -moz-border-width: 3px;
+    -moz-color: white;
+    -moz-list-style-type: none;
+    -moz-padding-top: 5px;
+    -moz-padding-bottom: 5px;
+    -moz-padding-left: 25px;
+    -moz-padding-right: 25px;
+    -moz-text-align: center;
+    -moz-text-decoration: unset;
+    -moz-transition: 0.5s;
+    -ms-background-color: #222;
+    -ms-border-color: orange;
+    -ms-border-radius: 25px;
+    -ms-border-style: groove;
+    -ms-border-width: 3px;
+    -ms-color: white;
+    -ms-list-style-type: none;
+    -ms-padding-top: 5px;
+    -ms-padding-bottom: 5px;
+    -ms-padding-left: 25px;
+    -ms-padding-right: 25px;
+    -ms-text-align: center;
+    -ms-text-decoration: unset;
+    -ms-transition: 0.5s;
+    -o-background-color: #222;
+    -o-border-color: orange;
+    -o-border-radius: 25px;
+    -o-border-style: groove;
+    -o-border-width: 3px;
+    -o-color: white;
+    -o-list-style-type: none;
+    -o-padding-top: 5px;
+    -o-padding-bottom: 5px;
+    -o-padding-left: 25px;
+    -o-padding-right: 25px;
+    -o-text-align: center;
+    -o-text-decoration: unset;
+    -o-transition: 0.5s;
+    -webkit-background-color: #222;
+    -webkit-border-color: orange;
+    -webkit-border-radius: 25px;
+    -webkit-border-style: groove;
+    -webkit-border-width: 3px;
+    -webkit-color: white;
+    -webkit-list-style-type: none;
+    -webkit-padding-top: 5px;
+    -webkit-padding-bottom: 5px;
+    -webkit-padding-left: 25px;
+    -webkit-padding-right: 25px;
+    -webkit-text-align: center;
+    -webkit-text-decoration: unset;
+    -webkit-transition: 0.5s;
+}
+
+/* 
+==================================================
+The above piece of code changes the following: background color, border color, border radius, border style, border width, font/text color, top/bottom/left/right paddings, text alignment, text decoration of all <a> (all <a> elements with the id of "contacts" as well as being direct children of footer elements) elements to the following respective values: #222, orange, 25px, groove, 3px, white, 5px, 5px, 25px, 25px, center, none; as well as adding cross-browser extensions so that the above piece of code will function properly with the following browsers: Safari, Mozilla Firefox, Internet Explorer, Microsoft Edge, Google Chrome, Opera.
+==================================================
+*/
+
+footer>a#contacts:hover {
+    background-color: #222;
+    border-color: orange;
+    border-style: groove;
+    border-width: 3px;
+    color: white;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.5s;
+    -moz-background-color: #222;
+    -moz-border-color: orange;
+    -moz-border-style: groove;
+    -moz-border-width: 3px;
+    -moz-color: white;
+    -moz-font-weight: bold;
+    -moz-padding-top: 6px;
+    -moz-padding-bottom: 6px;
+    -moz-padding-left: 50px;
+    -moz-padding-right: 50px;
+    -moz-transition: 0.5s;
+    -ms-background-color: #222;
+    -ms-border-color: orange;
+    -ms-border-style: groove;
+    -ms-border-width: 3px;
+    -ms-color: white;
+    -ms-font-weight: bold;
+    -ms-padding-top: 6px;
+    -ms-padding-bottom: 6px;
+    -ms-padding-left: 50px;
+    -ms-padding-right: 50px;
+    -ms-transition: 0.5s;
+    -o-background-color: #222;
+    -o-border-color: orange;
+    -o-border-style: groove;
+    -o-border-width: 3px;
+    -o-color: white;
+    -o-font-weight: bold;
+    -o-padding-top: 6px;
+    -o-padding-bottom: 6px;
+    -o-padding-left: 50px;
+    -o-padding-right: 50px;
+    -o-transition: 0.5s;
+    -webkit-background-color: #222;
+    -webkit-border-color: orange;
+    -webkit-border-style: groove;
+    -webkit-border-width: 3px;
+    -webkit-color: white;
+    -webkit-font-weight: bold;
+    -webkit-padding-top: 6px;
+    -webkit-padding-bottom: 6px;
+    -webkit-padding-left: 50px;
+    -webkit-padding-right: 50px;
+    -webkit-transition: 0.5s;
+}
+
+/* 
+==================================================
+The above piece of code changes the following: background color, border color, border style, border width, font/text color, font weight, top/bottom/left/right paddings of all <a> (all <a> elements with the id of "contacts" as well as being direct children of footer elements) elements (when they are hovered upon) to the following respective values: #222, orange, groove, 3px, white, bold, 6px, 6px, 50px, 50px; as well as adding cross-browser extensions so that the above piece of code will function properly with the following browsers: Safari, Mozilla Firefox, Internet Explorer, Microsoft Edge, Google Chrome, Opera.
+==================================================
+*/
 
 /*
- * Hide visually and from screen readers
- */
+===========================================================================
+Footer Styles (END)
+===========================================================================
+*/
 
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-    /* 1 */
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 /*
 ==================================================
 Mobile Styles: 0px to 480px
 ==================================================
 */
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " ("attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " ("attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+/*
+==================================================
+Printing Styles
+==================================================
+*/
+@media print {}
